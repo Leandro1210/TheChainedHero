@@ -1,0 +1,156 @@
+global flecha = 100
+
+//Carregar todas as sprites e imagens
+
+startAssets:
+backGround = CreateSprite(LoadImage("BG2.png") )
+SetSpriteSize(background, 1920.0, 1080.0)
+
+LoadFont(1, "Font.ttf")
+SetPrintFont(1)
+
+LoadImage (4, "bonfire.png")
+CreateSprite(4,4)
+SetSpriteSIze(4, 144, 144)
+SetSpritePosition(4, 880, 820)
+SetSpriteAnimation (4, 64, 64, 6)
+PlaySprite (4, 12, 1, 1, 6)
+
+LoadImage (1, "Hero.png")
+CreateSprite(1,1)
+SetSpriteSIze(1, 240, 240)
+SetSpritePosition(1, 820, 745)
+SetSpriteAnimation(1, 100, 80, 24)
+PlaySprite(1, 12, 1, 1, 10)
+SetSpriteShape(1, 3)
+
+LoadImage (5, "torch.png")
+CreateSprite(5,5)
+SetSpriteSIze(5, 80, 80)
+SetSpritePosition(5, 308, 620)
+SetSpriteAnimation (5, 64, 64, 6)
+PlaySprite (5, 12, 1, 1, 6)
+
+LoadImage (6, "torch.png")
+CreateSprite(6,6)
+SetSpriteSIze(6, 80, 80)
+SetSpritePosition(6, 1680, 620)
+SetSpriteAnimation (6, 64, 64, 6)
+PlaySprite (6, 12, 1, 1, 6)
+
+LoadImage (7, "skeleWalk.png")
+CreateSprite(7,7)
+SetSpriteFlip(7,1,0)
+SetSpriteSIze(7, 300, 300)
+SetSpritePosition(7, 2000, 750)
+SetSpriteAnimation (7, 150, 147, 4)
+PlaySprite (7, 8, 1, 1, 4)
+SetSpriteShape(7, 3)
+
+LoadImage (8, "mushWalk.png")
+CreateSprite(8,8)
+SetSpriteFlip(8,1,0)
+SetSpriteSIze(8, 300, 300)
+SetSpritePosition(8, 2500, 758)
+SetSpriteAnimation (8, 150, 147, 8)
+PlaySprite (8, 12, 1, 1, 8)
+SetSpriteShape(8, 3)
+
+LoadImage (9, "goblinWalk.png")
+CreateSprite(9,9)
+SetSpriteFlip(9,1,0)
+SetSpriteSIze(9, 300, 300)
+SetSpritePosition(9, 3000, 758)
+SetSpriteAnimation (9, 150, 147, 8)
+PlaySprite (9, 12, 1, 1, 8)
+SetSpriteShape(8, 3)
+
+LoadImage (10, "skeleWalk.png")
+CreateSprite(10,10)
+SetSpriteSIze(10, 300, 300)
+SetSpritePosition(10, -2000, 750)
+SetSpriteAnimation (10, 150, 147, 4)
+PlaySprite (10, 8, 1, 1, 4)
+SetSpriteShape(10, 3)
+
+LoadImage (11, "mushWalk.png")
+CreateSprite(11,11)
+SetSpriteSIze(11, 300, 300)
+SetSpritePosition(11, -2500, 758)
+SetSpriteAnimation (11, 150, 147, 8)
+PlaySprite (11, 12, 1, 1, 8)
+SetSpriteShape(11, 3)
+
+LoadImage (12, "goblinWalk.png")
+CreateSprite(12,12)
+SetSpriteSIze(12, 300, 300)
+SetSpritePosition(12, -3000, 758)
+SetSpriteAnimation (12, 150, 147, 8)
+PlaySprite (12, 12, 1, 1, 8)
+SetSpriteShape(12, 3)
+
+LoadImage (flecha, "Arrow.png")
+CreateSprite(flecha, flecha)
+SetSpriteSIze(flecha, 50, 15)
+
+LoadImage (13, "golem.png")
+CreateSprite(13,13)
+SetSpriteFlip(13, 1, 0)
+SetSpriteSIze(13, 350, 350)
+SetSpritePosition(13, 2500, 700)
+SetSpriteAnimation (13, 100, 100, 8)
+PlaySprite (13, 6, 1, 1, 4)
+SetSpriteShape(13, 3)
+
+LoadImage(14, "menu.jpg")
+CreateSprite(14, 14) 
+SetSpriteVisible(14, 0)
+
+LoadImage(15, "Logo.png")
+CreateSprite(15, 15)
+SetSpriteVisible(15, 0)
+SetSpriteSize(15, 1500, 800)
+SetSpritePosition(15, 140, -100)
+
+LoadImage(16, "jogar.png")
+CreateSprite(16, 16)
+SetSpriteSize(16, 300, 300)
+SetSpritePosition(16, 820, 500)
+
+LoadImage(17, "sair.png")
+CreateSprite(17, 17)
+SetSpriteSize(17, 300, 300)
+SetSpritePosition(17, 820, 710)
+
+LoadImage(18, "GanhouTela.jpg")
+CreateSprite(18, 18)
+SetSpriteVisible(18, 0)
+
+LoadImage(19, "PerdeuTela.jpg")
+CreateSprite(19, 19)
+SetSpriteVisible(19, 0)
+
+LoadImage(20, "aura.png")
+CreateSprite(20, 20)
+SetSpriteSize(20, 250, 250)
+SetSpritePosition(20, 6000, 6000)
+SetSpriteAnimation(20, 124, 130, 12)
+PlaySprite(20, 20, 1, 1, 18)
+
+LoadImage(21, "TutorialText.png")
+CreateSprite(21, 21)
+SetSpriteSize(21, 300, 300)
+SetSpritePosition(21, 816, 600)
+
+LoadImage(23, "Tutorial.png")
+CreateSprite(23, 23)
+SetSpriteVisible(23, 0)
+SetSpritePosition(23, 520, 100)
+
+LoadImage(22, "Voltar.png")
+CreateSprite(22, 22)
+SetSpriteVisible(22, 0)
+SetSpriteSize(22, 300, 300)
+SetSpritePosition(22, 820, 784)
+
+return
